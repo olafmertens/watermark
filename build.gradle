@@ -1,0 +1,17 @@
+apply plugin: 'scala'
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://repo.spray.io/'
+    }
+}
+
+dependencies {
+    compile 'org.scala-lang:scala-library:2.11.8'
+    compile 'com.typesafe.akka:akka-actor_2.11:2.4.6'
+    compile 'com.typesafe.scala-logging:scala-logging_2.11:3.4.0'
+    compile 'io.spray:spray-json_2.11:1.3.2'
+    compile 'ch.qos.logback:logback-classic:1.1.7'
+    testCompile 'com.novocode:junit-interface:0.11'
+}

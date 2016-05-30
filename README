@@ -1,0 +1,30 @@
+This is an implementation of the watermark test.
+
+It's a simple implementation that stores the resulting documents in memory. There is no persistence.
+The result documents are removed from the store after an hour. Within that hour the documents can be fetched
+with the WatermarkService.
+
+
+Problems with the test description
+----------------------------------
+
+I don't understand the line
+"The watermark of a book or a journal is identified by setting the watermark property of the object."
+It should probably say
+"The watermark of a book or a journal is identified by the watermark property of the object."
+
+
+The watermark examples look like JSON strings, but the keys are not quoted. I think this is an error.
+I quoted the keys in my implementation.
+
+
+
+Things that should be changed in the code for a more robust implementation
+--------------------------------------------------------------------------
+
+- Use dependency injection to set config values and implementation details.
+- Use a persistent result repository. The implementation should be set by dependency injection.
+
+
+
+Olaf Mertens (www.olaf-mertens.com)
