@@ -24,6 +24,7 @@ Things that should be changed in the code for a more robust implementation
 
 - Use dependency injection to set config values and implementation details.
 - Use a persistent result repository. The implementation should be set by dependency injection.
+- Use a pool of actors instead of a single actor to speed up the watermark processing.
 
 
 
